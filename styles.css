@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    /* box-sizing: border-box; */
+    font-family: 'Inter', sans-serif;
+}
+
+/* html,body{
+    overflow-x: hidden;
+} */
+
+body {
+    width: 100%;
+}
+
+header {
+    background-color: #000;
+}
+
+.nav-bar {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 13vh;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+
+}
+
+.login-button button {
+    border: none;
+    background: #81BA95;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.nav-bar {
+    padding: 1.5rem 4rem;
+}
+
+.nav-item {
+    display: none;
+}
+
+.login-button {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: block;
+}
+
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+}
+
+.mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+}
+
+.mobile-menu .login-button button {
+    width: 100%;
+}
+
+.open {
+    display: block;
+}
+
+
+#planos h1{
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.seta-baixo {
+    text-align: center;
+    margin: 10vh;
+}
+
+.plano-container h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.plano-container{
+    padding: 40px;
+    margin: 5%;
+    color: #fff;
+    background: #000000;
+    border-radius: 10px;
+}
+
+.plano-container p{
+    word-wrap: break-word;
+    font-size: 1.1rem;
+}
+
+.plano-container h3{
+    font-size: 1.7rem;
+}
+
+.plano-container p {
+    font-weight: bold;
+}
+
+.desconto{
+    display: flex;
+}
+
+.desconto h3{
+    text-decoration: line-through;
+    text-decoration-color: #ce0505;
+}
+
+.desconto h4 {
+    padding-left: 20px;
+    color:#ce0505; 
+    font-weight: bold;
+}
+
+.preco-ano {
+    padding-top: 20px;
+}
+
+.vantagens {
+    list-style-position: inside;
+    /* list-style: none; */
+    color: #0ac74c;
+    list-style-image: url('images/certo.png');
+
+}
+
+.desvantagens {
+    list-style-position: inside;
+    /* list-style: none; */
+    color: #ce0505;
+    /* text-decoration: line-through; */
+    list-style-image: url('images/errado.png');
+}
+
+.plano-container button {
+    margin-top: 20px;
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height:50px;
+    transition: 0.3s;
+}
+
+.plano-container button:hover{
+    background-color: #d4d4d4;
+}
+
+.plano-container button a {
+    text-decoration: none;
+    color: #000;
+}
+
+#planos img{
+    margin: 30px;
+}
+
+#modelos {
+    text-align: center;
+}
+
+#modelos h1{
+    margin: 30px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#bike img{
+    width: 70%;
+}
+
+#patinete img{
+    width: 90%;
+}
+
+#bike-patinete {
+    text-align: center;
+}
+
+#sobre {
+    padding: 20px;
+    background-color: #81BA95;
+}
+
+#playlist {
+    text-align: center;
+    background-image: url(images/background-playlist.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+
+#playlist img {
+    margin-top: 50px;
+    width: 85%;
+    transition: 0.3s;
+}
+
+#playlist img:hover {
+    transform: scale(0.9);
+}
+
+
+@media (min-width:801px) {
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .mobile-menu{
+        display: none;
+    }
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    
+    .nav-item {
+        display: flex;
+    }
+    
+    .login-button {
+        display: flex;
+    }
+    
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .mobile-menu .nav-item {
+        display: none;
+        padding-top: 1.2rem;
+    }
+    
+    .mobile-menu .login-button {
+        display: none;
+        padding: 1rem 2rem;
+    }
+    
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    
+    .open {
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-list ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .nav-item {
+        margin: 0 15px;
+    }
+
+    #planos {
+        width: 100%;
+    }
+
+    .agrupar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .plano-container {
+        width: 50%;
+    }
+
+
+}
+
+@media (min-width:1281px) {
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .mobile-menu{
+        display: none;
+    }
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    
+    .nav-item {
+        display: flex;
+    }
+    
+    .login-button {
+        display: flex;
+    }
+    
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .mobile-menu .nav-item {
+        display: none;
+        padding-top: 1.2rem;
+    }
+    
+    .mobile-menu .login-button {
+        display: none;
+        padding: 1rem 2rem;
+    }
+    
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    
+    .open {
+        display: none;
+    }
+
+    .nav-list{
+    display: flex;
+    align-items: center;
+    }
+
+    .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    }
+
+    .nav-item {
+    margin: 0 15px;
+    }
+
+    .agrupar {
+        margin-left: 8vh;
+        display: flex;
+
+    }
+
+    .plano-container {
+        width: 30%;
+        margin: 20px;
+    }
+
+    .carousel-inner {
+        height: 80vh;   
+    }
+}
