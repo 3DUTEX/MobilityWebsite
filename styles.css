@@ -115,7 +115,7 @@ header {
 }
 
 
-#planos h1{
+#titulo {
     text-align: center;
     margin: 30px;
     font-weight: bold;
@@ -124,91 +124,56 @@ header {
 
 .seta-baixo {
     text-align: center;
-    margin: 10vh;
+    margin: 3vh;
 }
 
-.plano-container h2{
-    margin-bottom: 20px;
-    font-weight: bold;
-}
 
-.plano-container{
-    padding: 40px;
+.plano {
     margin: 5%;
-    color: #fff;
-    background: #000000;
-    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #d8d8d8;
+    /* #d8d8d8 */
 }
 
-.plano-container p{
-    word-wrap: break-word;
-    font-size: 1.1rem;
+.plano:hover {
+    border: 2px solid #000;
 }
 
-.plano-container h3{
-    font-size: 1.7rem;
-}
-
-.plano-container p {
-    font-weight: bold;
-}
-
-.desconto{
-    display: flex;
-}
-
-.desconto h3{
-    text-decoration: line-through;
-    text-decoration-color: #ce0505;
-}
-
-.desconto h4 {
-    padding-left: 20px;
-    color:#ce0505; 
-    font-weight: bold;
-}
-
-.preco-ano {
-    padding-top: 20px;
-}
-
-.vantagens {
-    list-style-position: inside;
-    /* list-style: none; */
-    color: #0ac74c;
-    list-style-image: url('images/certo.png');
-
-}
-
-.desvantagens {
-    list-style-position: inside;
-    /* list-style: none; */
-    color: #ce0505;
-    /* text-decoration: line-through; */
-    list-style-image: url('images/errado.png');
-}
-
-.plano-container button {
-    margin-top: 20px;
-    background: #fff;
-    border: none;
-    border-radius: 30px;
-    width: 100%;
-    height:50px;
-    transition: 0.3s;
-}
-
-.plano-container button:hover{
-    background-color: #d4d4d4;
-}
-
-.plano-container button a {
-    text-decoration: none;
+.plano h3, h1, li, p{
     color: #000;
 }
 
-#planos img{
-    margin: 30px;
+.plano h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.preco h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.preco {
+    border-bottom: 1px solid #000;
+}
+
+#lista {
+    padding-top: 30px;
+}
+
+#lista p{
+    padding: 0%;
+}
+
+.plano button {
+    margin-top: 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 10px;
 }
 
 #modelos {
@@ -241,11 +206,11 @@ header {
 #playlist {
     text-align: center;
     background-image: url(images/background-playlist.jpg);
-    background-position: center;
+    background-position: right;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
 }
 
 #playlist img {
@@ -287,7 +252,7 @@ footer ul li{
 #logo-slogan p{
     color: #fff;
     font-size: 1.1rem;
-    margin-top: 50px;
+    margin-top: 40px;
     font-weight: bold;
 }
 
@@ -296,6 +261,7 @@ footer h2{
     margin-top: 60px;
     font-size: 1.3rem;
 }
+
 
 @media (min-width:801px) {
     .mobile-menu-icon {
@@ -372,15 +338,6 @@ footer h2{
         width: 100%;
     }
 
-    .agrupar {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .plano-container {
-        width: 50%;
-    }
-
 
 }
 
@@ -455,18 +412,8 @@ footer h2{
     margin: 0 15px;
     }
 
-    .agrupar {
-        margin-left: 8vh;
-        display: flex;
-
-    }
-
-    .plano-container {
-        width: 30%;
-        margin: 20px;
-    }
-
     .carousel-inner {
         height: 80vh;   
     }
+
 }
