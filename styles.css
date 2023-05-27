@@ -134,7 +134,7 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background: #d8d8d8;
+    background: rgb(240, 240, 240);
     /* #d8d8d8 */
 }
 
@@ -187,11 +187,11 @@ header {
 }
 
 #bike img{
-    width: 70%;
+    width: 90%;
 }
 
 #patinete img{
-    width: 90%;
+    width: 100%;
 }
 
 #bike-patinete {
@@ -243,10 +243,22 @@ footer ul{
 footer ul li{
     list-style: none;
     padding: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer ul li:hover{
+    transform: scale(1.2);
 }
 
 #logo-slogan img{
     width: 80%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#logo-slogan img:hover {
+    transform: scale(1.1);
 }
 
 #logo-slogan p{
@@ -334,10 +346,55 @@ footer h2{
         margin: 0 15px;
     }
 
-    #planos {
-        width: 100%;
+    .plano {
+        margin: 10px;
+        width: 47%;
+    }
+    #bike, #patinete{
+        width: 60%;
+        margin-left: 20%;
     }
 
+    .container-planos {
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #plano3 {
+        width: 500px;
+    }
+
+    #playlist img{
+        width: 50vh;
+    }
+
+    footer{
+        padding-top: 10vh;
+        height: 70vh;
+        transition: 0.3s;
+    }
+
+    footer ul li{
+        transition: 0.3s;
+    }
+
+    #logo-slogan p{
+        font-size: 1.5rem;
+    }
+
+    #logo-slogan{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #logo-slogan img {
+        width: 50vh;
+    }
 
 }
 
