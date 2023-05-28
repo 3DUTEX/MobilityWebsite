@@ -75,6 +75,10 @@ header {
     display: none;
 }
 
+.nav-item:hover{
+    color: #ffffff;
+}
+
 .login-button {
     display: none;
 }
@@ -137,6 +141,8 @@ header {
     background: rgb(240, 240, 240);
     /* #d8d8d8 */
 }
+
+
 
 .plano:hover {
     border: 2px solid #000;
@@ -225,11 +231,14 @@ header {
 
 footer {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-color: #000;
     text-align: center;
     align-items: center;
     justify-content: center;
+    bottom:0;
+    left:0;
+    width:100%;
 }
 
 footer ul{
@@ -291,6 +300,10 @@ footer h2{
     .nav-item {
         display: flex;
     }
+
+    .nav-item:hover{
+        border-bottom: 2px solid #81BA95;
+    }
     
     .login-button {
         display: flex;
@@ -346,10 +359,13 @@ footer h2{
         margin: 0 15px;
     }
 
+
+
     .plano {
         margin: 10px;
         width: 47%;
     }
+
     #bike, #patinete{
         width: 60%;
         margin-left: 20%;
