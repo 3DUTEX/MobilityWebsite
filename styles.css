@@ -221,7 +221,7 @@ header {
 
 #playlist img {
     margin-top: 50px;
-    width: 85%;
+    width: 40vh;
     transition: 0.3s;
 }
 
@@ -299,10 +299,11 @@ footer h2{
     
     .nav-item {
         display: flex;
+        transition: 0.3s ease-in;
     }
 
     .nav-item:hover{
-        border-bottom: 2px solid #81BA95;
+        border-bottom: 1px solid #81BA95;
     }
     
     .login-button {
