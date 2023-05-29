@@ -261,7 +261,7 @@ footer ul li:hover{
 }
 
 #logo-slogan img{
-    width: 80%;
+    width: 40vh;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -375,7 +375,6 @@ footer h2{
     .container-planos {
         display: flex;
         flex-wrap: wrap;
-        display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -488,6 +487,54 @@ footer h2{
 
     .carousel-inner {
         height: 80vh;   
+    }
+
+    .container-planos {
+        flex-wrap: nowrap;
+    }
+    
+    .plano {
+        width: 30%;
+    }
+    #plano3 {
+        width: 30% ;
+    }
+
+    .bike-patinete {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    #bike {
+        position: relative;
+        left: -200px;
+        width: 100vh;
+    }
+
+    #patinete {
+        position: relative;
+        left: -200px;
+        top: -50px;
+        width: 90vh;
+    }
+
+    #playlist img{
+        width: 60vh;
+    }
+
+    footer {
+        padding: 0vh;
+        height: 80vh;
+    }
+
+    footer ul{
+        position: relative;
+        left: -100px;
+        top: 60%;
+        text-align: right;
+        align-items: right;
+        justify-content: right;
     }
 
 }
