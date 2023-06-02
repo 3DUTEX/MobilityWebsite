@@ -101,7 +101,7 @@
                     <p>Equipamentos de segurança</p>
                 </div>
 
-                <button>OBTER OPLANO</button>
+                <a  href="#locar"><button id="btn" onClick="formsLocar()">OBTER OPLANO</button></a>
             </div>
 
             <div class="plano">
@@ -116,7 +116,7 @@
                     <p>1 ano de spotify de graça</p>
                 </div>
 
-                <button>OBTER OPLANO</button>
+                <a  href="#locar"><button id="btn" onClick="formsLocar()">OBTER OPLANO</button></a>
             </div>
 
             <div class="plano" id="plano3">
@@ -131,7 +131,7 @@
                     <p>Seguro contra roubo/quebra</p>
                 </div>
 
-                <a  href="#locar"><button id="btn">OBTER OPLANO</button></a>
+                <a  href="#locar"><button id="btn" onClick="formsLocar()">OBTER OPLANO</button></a>
             </div>
         </div>
 
@@ -154,7 +154,22 @@
                 <input type="radio" id="m" name="sexo" value="M">
             <label for="f">F</label>
                 <input type="radio" id="f" name="sexo" value="f"> -->
-            
+            <label for="#CPF">CPF: </label>
+                <input type="text" id="CPF"></input>
+            <label for="#planoEscolhido">Plano: </label>
+                <select name="planoEscolhido" id="planoEscolhido" onchange="valueSelected()">
+                    <option value=""></option>
+                    <option value="pStandard">Plano Standard</option>
+                    <option value="pVIP">Plano VIP</option>
+                    <option value="pSuper">Plano Super</option>
+                </select>
+            <div id="total">
+                <h1>Total: </h1>
+                <h2 id="valorTotal">R$0,00</h2>
+            </div>
+   
+            <button id="btnAssinar">Assinar</button>
+
         </form>
     </div>
 

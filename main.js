@@ -13,24 +13,42 @@ function menuShow() {
     }
 }
 
-let sla = document.querySelector("#btn")
+let btn = document.querySelector("#btn")
 let locar = document.querySelector(".locar")
-let X = document.querySelector("#X")
+let xCancelar = document.querySelector("#X")
+
+xCancelar.addEventListener("click", function(){
+    locar.style.display = "none";
+    cont = 0;
+})
 
 let cont = 0;
-sla.addEventListener("click", function(){
-    
+function formsLocar () {
     if(cont == 1){
-        alert("Preencha os campos")   
+        alert("Por favor, preencha os campos")   
     };
 
     locar.style.display = "block";
     
     cont = 1;
+}
 
-})
+let dropDownList = document.querySelector("#planoEscolhido")
+let valorTotal = document.querySelector("#valorTotal")
 
-X.addEventListener("click", function(){
-    locar.style.display = "none";
-    cont = 0;
-})
+function valueSelected() {
+
+    const dropDownListValue = dropDownList.value;
+    
+    if(dropDownListValue == "pStandard"){
+        valorTotal.textContent = "R$ 100,00"
+    } else if (dropDownListValue == "pVIP"){
+        valorTotal.textContent = "R$ 180,00"
+    } else if(dropDownListValue == "pSuper"){
+        valorTotal.textContent = "R$ 210,00"
+    } else{
+        valorTotal.textContent = "R$ 0,00"
+    }
+    
+}
+

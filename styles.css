@@ -311,8 +311,14 @@ footer h2{
     cursor: pointer;
 }
 
-.locar input{  
+.locar input{
+    padding-left: 10px;
+    background-color: #222;
+    color:#fff;
+    border: none;
+    border: 1px solid #fff; 
     /* margin-top: 30px; */
+    border-radius: 10px;
     width: 40vh;
     height: 40px;
 }
@@ -325,6 +331,47 @@ footer h2{
     display: grid;
 }
 
+.locar select{
+    border: 1px solid #fff; 
+    background-color: #222;
+    color:#fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width: 30vh;;
+    height: 5vh;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#total h1{
+    margin-top: 100px;
+    padding: 0;
+}
+
+#total h2{
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.locar button {
+    border: none;
+    width: 200px;
+    font-size: 2rem;
+    color:#222;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.locar button:hover{
+    box-shadow: 0 0 10px #fff;
+}
 
 @media (min-width:801px) {
     .mobile-menu-icon {
