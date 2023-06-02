@@ -18,6 +18,9 @@ body {
 
 header {
     background-color: #000;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 .nav-bar {
@@ -117,6 +120,10 @@ header {
 
 .open {
     display: block;
+}
+
+#carrossel{
+    padding-top: 80px;
 }
 
 
