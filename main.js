@@ -2,11 +2,11 @@ function menuShow() {
     let menuMobile = document.querySelector(".mobile-menu");
     const menuIcon = document.querySelector(".icon");
 
-    if (menuMobile.classList.contains("open")) {
+    if (menuMobile.classList.contains("open")) { //se menuMobile estiver aberto, feche
         menuMobile.classList.remove("open")
 
         menuIcon.src = "images/menu_white_36dp.svg"
-    } else {
+    } else { //se não, abra
         menuIcon.src = "images/close_white_36dp.svg"
         
         menuMobile.classList.add("open")     
@@ -16,29 +16,33 @@ function menuShow() {
 let btn = document.querySelector("#btn")
 let locar = document.querySelector(".locar")
 let xCancelar = document.querySelector("#X")
-
-xCancelar.addEventListener("click", function(){
-    locar.style.display = "none";
-    cont = 0;
-})
-
-let cont = 0;
-function formsLocar () {
-    if(cont == 1){
-        alert("Por favor, preencha os campos")   
-    };
-
-    locar.style.display = "block";
-    
-    cont = 1;
-}
-
+let cont = 0; //cont começa 0
 let dropDownList = document.querySelector("#planoEscolhido")
 let valorTotal = document.querySelector("#valorTotal")
 
+xCancelar.addEventListener("click", function(){ //quando clicado, altera locar para display none
+    locar.style.display = "none";
+    cont = 0; //quando clicado cont recebe 0
+})
+
+function formsLocar (plano) { //prop plano seleciona o plano na dropDownList
+    if(cont == 1){ //se cont for 1, abre alerta
+        alert("Por favor, preencha os campos")   
+    };
+
+    locar.style.display = "block"; //quando clicado, altera locar para display block
+    
+    cont = 1; //quando clicado cont recebe 1
+
+    dropDownList.value = plano;
+
+    valueSelected()
+}
+
+
 function valueSelected() {
 
-    const dropDownListValue = dropDownList.value;
+    const dropDownListValue = dropDownList.value; //pega valor da dropDownList
     
     if(dropDownListValue == "pStandard"){
         valorTotal.textContent = "R$ 100,00"
