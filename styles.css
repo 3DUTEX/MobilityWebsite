@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 
-*{
-    margin: 0%;
-    padding: 0%;
-    /* box-sizing: border-box; */
-    font-family: 'Inter', sans-serif;
+* {
+  margin: 0%;
+  padding: 0%;
+  /* box-sizing: border-box; */
+  font-family: "Inter", sans-serif;
 }
 
 /* html,body{
@@ -12,627 +12,642 @@
 } */
 
 body {
-    width: 100%;
+  width: 100%;
 }
 
-
 header {
-    background-color: #000;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
 
 .nav-bar {
-    background-color: #000;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo img{
-    width: 13vh;
+.logo img {
+  width: 13vh;
 }
-
 
 .nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
 }
 
 .login-button button {
-    border: none;
-    background: #81BA95;
-    padding: 10px 15px;
-    border-radius: 5px;
+  border: none;
+  background: #81ba95;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
-.login-button button a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
+.login-button button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .mobile-menu-icon {
-    display: none;
+  display: none;
 }
 
-.mobile-menu{
-    display: none;
+.mobile-menu {
+  display: none;
 }
 
 .nav-bar {
-    padding: 1.5rem 4rem;
+  padding: 1.5rem 4rem;
 }
 
 .nav-item {
-    display: none;
+  display: none;
 }
 
-.nav-item:hover{
-    color: #ffffff;
+.nav-item:hover {
+  color: #ffffff;
 }
 
 .login-button {
-    display: none;
+  display: none;
 }
 
 .mobile-menu-icon {
-    display: block;
+  display: block;
 }
 
 .mobile-menu-icon button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .mobile-menu .nav-item {
-    display: block;
-    padding-top: 1.2rem;
+  display: block;
+  padding-top: 1.2rem;
 }
 
 .mobile-menu .login-button {
-    display: block;
-    padding: 1rem 2rem;
+  display: block;
+  padding: 1rem 2rem;
 }
 
 .mobile-menu .login-button button {
-    width: 100%;
+  width: 100%;
 }
 
 .open {
-    display: block;
+  display: block;
 }
 
-#carrossel{
-    padding-top: 80px;
+#carrossel {
+  padding-top: 80px;
 }
-
 
 #titulo {
-    text-align: center;
-    margin: 30px;
-    font-weight: bold;
-    font-size: 2.5rem;
+  text-align: center;
+  margin: 30px;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .seta-baixo {
-    text-align: center;
-    margin: 3vh;
+  text-align: center;
+  margin: 3vh;
 }
-
 
 .plano {
-    margin: 5%;
-    padding: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgb(233, 233, 233), rgb(240, 240, 240), rgb(233, 233, 233));
-    border-radius: 20px;
-    /* #d8d8d8 */
+  margin: 5%;
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgb(233, 233, 233),
+    rgb(240, 240, 240),
+    rgb(233, 233, 233)
+  );
+  border-radius: 20px;
+  /* #d8d8d8 */
 }
-
-
 
 .plano:hover {
-    border: 2px solid #000;
+  border: 2px solid #000;
 }
 
-.plano h3, h1, li, p{
-    color: #000;
+.plano h3,
+h1,
+li,
+p {
+  color: #000;
 }
 
 .plano h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.preco h3{
-    font-weight: bold;
-    font-size: 1.3rem;
+.preco h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .preco {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 #lista {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
-#lista p{
-    padding: 0%;
+#lista p {
+  padding: 0%;
 }
 
 .plano button {
-    margin-top: 20px;
-    border: none;
-    background: #000;
-    color: #fff;
-    padding: 15px;
-    border-radius: 30px;
-    transition: 0.3s;
-
+  margin-top: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  transition: 0.3s;
 }
 
 #modelos {
-    text-align: center;
+  text-align: center;
 }
 
-#modelos h1{
-    margin: 30px;
-    font-weight: bold;
-    font-size: 2.5rem;
+#modelos h1 {
+  margin: 30px;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
-#bike img{
-    width: 90%;
+#bike img {
+  width: 90%;
 }
 
-#patinete img{
-    width: 100%;
+#patinete img {
+  width: 100%;
 }
 
 #bike-patinete {
-    text-align: center;
+  text-align: center;
 }
 
 #sobre {
-    padding: 20px;
-    background-color: #81BA95;
+  padding: 20px;
+  background-color: #81ba95;
 }
 
 #playlist {
-    text-align: center;
-    background-image: url(images/background-playlist.jpg);
-    background-position: right;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 60vh;
+  text-align: center;
+  background-image: url(images/background-playlist.jpg);
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
 }
 
 #playlist img {
-    margin-top: 50px;
-    width: 40vh;
-    transition: 0.3s;
+  margin-top: 50px;
+  width: 40vh;
+  transition: 0.3s;
 }
 
 #playlist img:hover {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 footer {
-    width: 100%;
-    height: 70vh;
-    background-color: #000;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    bottom:0;
-    left:0;
-    width:100%;
+  width: 100%;
+  height: 70vh;
+  background-color: #000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-footer ul{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding-top: 30px;
+footer ul {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
 }
 
-footer ul li{
-    list-style: none;
-    padding: 30px;
-    transition: 0.3s;
-    cursor: pointer;
+footer ul li {
+  list-style: none;
+  padding: 30px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-footer ul li:hover{
-    transform: scale(1.2);
+footer ul li:hover {
+  transform: scale(1.2);
 }
 
-#logo-slogan img{
-    width: 40vh;
-    cursor: pointer;
-    transition: 0.3s;
+#logo-slogan img {
+  width: 40vh;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #logo-slogan img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-#logo-slogan p{
-    color: #fff;
-    font-size: 1.1rem;
-    margin-top: 40px;
-    font-weight: bold;
+#logo-slogan p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-top: 40px;
+  font-weight: bold;
 }
 
-footer h2{
-    color: #fff;
-    margin-top: 60px;
-    font-size: 1.3rem;
+footer h2 {
+  color: #fff;
+  margin-top: 60px;
+  font-size: 1.3rem;
 }
 
 .locar {
-    text-align: center;
-    width: 100%;
-    background-color: #000;
-    margin-top: 100px;
-    display: none;
-    margin: 0;
-    padding: 0;
-    top: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  margin-top: 100px;
+  margin: 0;
+  padding: 0;
+  top: 0;
 }
 
-.locar h1{
-    font-weight: bold;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    color: #fff;
+.locar h1 {
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: #fff;
 }
 
-.locar img{
-    width: 10vh;
-    position: relative;
-    top: 60px;
-    cursor: pointer;
+.locar img {
+  width: 10vh;
+  position: relative;
+  top: 60px;
+  cursor: pointer;
 }
 
-.locar input{
-    padding-left: 10px;
-    background-color: #222;
-    color:#fff;
-    border: none;
-    border: 1px solid #fff; 
-    /* margin-top: 30px; */
-    border-radius: 10px;
-    width: 40vh;
-    height: 40px;
+.locar input {
+  padding-left: 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border: 1px solid #fff;
+  /* margin-top: 30px; */
+  border-radius: 10px;
+  width: 40vh;
+  height: 40px;
 }
 
-.locar label{
-    margin-top: 40px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.4rem;
-    display: grid;
+.locar label {
+  margin-top: 40px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: grid;
 }
 
-.locar select{
-    border: 1px solid #fff; 
-    background-color: #222;
-    color:#fff;
-    border-radius: 10px;
-    margin-top: 20px;
-    text-align: center;
-    width: 30vh;;
-    height: 5vh;
-    font-size: 1.3rem;
-    font-weight: bold;
+.locar select {
+  border: 1px solid #fff;
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  width: 30vh;
+  height: 5vh;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-#total h1{
-    margin-top: 100px;
-    padding: 0;
+#total h1 {
+  margin-top: 100px;
+  padding: 0;
 }
 
-#total h2{
-    margin-top: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 50px;
+#total h2 {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 
 .locar button {
+  border: none;
+  width: 200px;
+  font-size: 2rem;
+  color: #222;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  transition: 0.3s;
+}
+
+.locar button:hover {
+  box-shadow: 0 0 10px #fff;
+}
+
+.off {
+  visibility: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+
+.on {
+  visibility: visible;
+  height: 150vh;
+  transition: 0.5s;
+}
+
+.formOff {
+  opacity: 0;
+}
+
+.formOn {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media (min-width: 801px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-item {
+    display: flex;
+    transition: 0.3s ease-in;
+  }
+
+  .nav-item:hover {
+    border-bottom: 1px solid #81ba95;
+  }
+
+  .login-button {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
     border: none;
-    width: 200px;
-    font-size: 2rem;
-    color:#222;
-    background-color: #fff;
-    font-weight: bold;
-    border-radius: 20px;
-    margin-bottom: 100px;
-    transition: 0.3s;
-}
+    cursor: pointer;
+  }
 
-.locar button:hover{
-    box-shadow: 0 0 10px #fff;
-}
+  .mobile-menu ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 
-@media (min-width:801px) {
-    .mobile-menu-icon {
-        display: none;
-    }
-    
-    .mobile-menu{
-        display: none;
-    }
-    
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    
-    .nav-item {
-        display: flex;
-        transition: 0.3s ease-in;
-    }
+  .mobile-menu .nav-item {
+    display: none;
+    padding-top: 1.2rem;
+  }
 
-    .nav-item:hover{
-        border-bottom: 1px solid #81BA95;
-    }
-    
-    .login-button {
-        display: flex;
-    }
-    
-    .mobile-menu-icon {
-        display: none;
-    }
-    
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .mobile-menu ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    
-    .mobile-menu .nav-item {
-        display: none;
-        padding-top: 1.2rem;
-    }
-    
-    .mobile-menu .login-button {
-        display: none;
-        padding: 1rem 2rem;
-    }
-    
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    
-    .open {
-        display: none;
-    }
+  .mobile-menu .login-button {
+    display: none;
+    padding: 1rem 2rem;
+  }
 
-    .nav-list{
-        display: flex;
-        align-items: center;
-    }
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
 
-    .nav-list ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
+  .open {
+    display: none;
+  }
 
-    .nav-item {
-        margin: 0 15px;
-    }
-
-
-
-    .plano {
-        margin: 10px;
-        width: 47%;
-    }
-
-    #bike, #patinete{
-        width: 60%;
-        margin-left: 20%;
-    }
-
-    .container-planos {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #plano3 {
-        width: 500px;
-    }
-
-    #playlist img{
-        width: 50vh;
-    }
-
-    footer{
-        padding-top: 10vh;
-        height: 70vh;
-        transition: 0.3s;
-    }
-
-    footer ul li{
-        transition: 0.3s;
-    }
-
-    #logo-slogan p{
-        font-size: 1.5rem;
-    }
-
-    #logo-slogan{
-        width: 100%;
-        text-align: center;
-
-    }
-
-    #logo-slogan img {
-        width: 50vh;
-    }
-
-}
-
-@media (min-width:1281px) {
-    .mobile-menu-icon {
-        display: none;
-    }
-    
-    .mobile-menu{
-        display: none;
-    }
-    
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    
-    .nav-item {
-        display: flex;
-    }
-    
-    .login-button {
-        display: flex;
-    }
-    
-    .mobile-menu-icon {
-        display: none;
-    }
-    
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .mobile-menu ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    
-    .mobile-menu .nav-item {
-        display: none;
-        padding-top: 1.2rem;
-    }
-    
-    .mobile-menu .login-button {
-        display: none;
-        padding: 1rem 2rem;
-    }
-    
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    
-    .open {
-        display: none;
-    }
-
-    .nav-list{
+  .nav-list {
     display: flex;
     align-items: center;
-    }
+  }
 
-    .nav-list ul {
+  .nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    }
+  }
 
-    .nav-item {
+  .nav-item {
     margin: 0 15px;
-    }
+  }
 
-    .carousel-inner {
-        height: 80vh;   
-    }
+  .plano {
+    margin: 10px;
+    width: 47%;
+  }
 
-    .container-planos {
-        flex-wrap: nowrap;
-    }
-    
-    .plano {
-        width: 30%;
-    }
-    #plano3 {
-        width: 30% ;
-    }
+  #bike,
+  #patinete {
+    width: 60%;
+    margin-left: 20%;
+  }
 
-    .bike-patinete {
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
+  .container-planos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #bike {
-        position: relative;
-        left: -200px;
-        width: 100vh;
-    }
+  #plano3 {
+    width: 500px;
+  }
 
-    #patinete {
-        position: relative;
-        left: -200px;
-        top: -50px;
-        width: 90vh;
-    }
+  #playlist img {
+    width: 50vh;
+  }
 
-    #playlist img{
-        width: 60vh;
-    }
+  footer {
+    padding-top: 10vh;
+    height: 70vh;
+    transition: 0.3s;
+  }
 
-    footer {
-        padding: 0vh;
-        height: 80vh;
-    }
+  footer ul li {
+    transition: 0.3s;
+  }
 
-    footer ul{
-        position: relative;
-        left: -100px;
-        top: 60%;
-        text-align: right;
-        align-items: right;
-        justify-content: right;
-    }
+  #logo-slogan p {
+    font-size: 1.5rem;
+  }
 
+  #logo-slogan {
+    width: 100%;
+    text-align: center;
+  }
+
+  #logo-slogan img {
+    width: 50vh;
+  }
+}
+
+@media (min-width: 1281px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-item {
+    display: flex;
+  }
+
+  .login-button {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: none;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button {
+    display: none;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  .carousel-inner {
+    height: 80vh;
+  }
+
+  .container-planos {
+    flex-wrap: nowrap;
+  }
+
+  .plano {
+    width: 30%;
+  }
+  #plano3 {
+    width: 30%;
+  }
+
+  .bike-patinete {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  #bike {
+    position: relative;
+    left: -200px;
+    width: 100vh;
+  }
+
+  #patinete {
+    position: relative;
+    left: -200px;
+    top: -50px;
+    width: 90vh;
+  }
+
+  #playlist img {
+    width: 60vh;
+  }
+
+  footer {
+    padding: 0vh;
+    height: 80vh;
+  }
+
+  footer ul {
+    position: relative;
+    left: -100px;
+    top: 60%;
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+  }
 }
