@@ -220,9 +220,13 @@ p {
   background-color: #81ba95;
 }
 
+#sobre p{
+  color: #fff;
+}
+
 #playlist {
   text-align: center;
-  background-image: url(images/background-playlist.jpg);
+  background-image: url(images/playlist-background.webp);
   background-position: right;
   background-size: cover;
   background-attachment: fixed;
@@ -634,4 +638,5 @@ footer h2 {
     align-items: right;
     justify-content: right;
   }
+
 }
