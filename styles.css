@@ -40,6 +40,8 @@ body {
 header {
   background-color: #000;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
   width: 100%;
 }
@@ -256,6 +258,16 @@ p {
   height: 60vh;
 }
 
+/* .sla {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+} */
+
 #playlist img {
   margin-top: 50px;
   width: 40vh;
@@ -264,6 +276,66 @@ p {
 
 #playlist img:hover {
   transform: scale(0.9);
+}
+
+.hidden {
+  height: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 100%;
+  height: 70vh;
+  transition: 0.3s;
+}
+
+#playlistModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contentModal {
+  position: absolute;
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #81ba95;
+}
+
+#contentModal h1,
+h2 {
+  padding: 10px 0;
+  font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+}
+
+#contentModal iframe {
+  width: 90%;
+  height: 50vh;
+}
+
+#contentModal img {
+  padding: 0;
+  margin: 0;
+  width: 80px;
+  cursor: pointer;
 }
 
 footer {
@@ -516,6 +588,10 @@ footer h2 {
     width: 50vh;
   }
 
+  #contentModal img {
+    width: 80px;
+  }
+
   footer {
     padding-top: 10vh;
     height: 70vh;
@@ -652,6 +728,10 @@ footer h2 {
 
   #playlist img {
     width: 60vh;
+  }
+
+  #contentModal img {
+    width: 80px;
   }
 
   footer {

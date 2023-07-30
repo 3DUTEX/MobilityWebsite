@@ -73,3 +73,20 @@ window.addEventListener("scroll", () => {
 
   indicator.style.width = `${percentage}%`;
 });
+
+const playlistImg = document.querySelector("#playlistImg");
+const playlistModal = document.querySelector("#playlistModal");
+
+playlistImg.addEventListener("click", () => {
+  if (playlistModal.className === "hidden") {
+    playlistModal.className = "visible";
+  } else {
+    playlistModal.className = "hidden";
+  }
+});
+
+const closeModal = document.querySelector("#closeModal");
+
+closeModal.addEventListener("click", () => {
+  playlistModal.className = "hidden";
+});
