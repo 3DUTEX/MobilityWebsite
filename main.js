@@ -90,3 +90,58 @@ window.addEventListener("scroll", () => {
 // closeModal.addEventListener("click", () => {
 //   playlistModal.className = "hidden";
 // });
+
+//carrossel by: t3xdev
+const btnAnt = document.querySelector("#btnAnt");
+const btnProx = document.querySelector("#btnProx");
+const image = document.querySelector(".imageCarrossel");
+
+const timeInterval = 3000;
+let interval = setInterval(proxSlide, timeInterval);
+let count = 1;
+
+const oneImage = "url('images/teste1.jpg')";
+const twoImage = "url('images/teste2.png')";
+const threeImage = "url('images/teste3.jpg')";
+
+function slideAnt() {
+  clearInterval(interval);
+  interval = setInterval(proxSlide, timeInterval);
+  count--;
+  switch (count) {
+    case 1:
+      image.style.backgroundImage = oneImage;
+      break;
+    case 2:
+      image.style.backgroundImage = twoImage;
+      break;
+    case 3:
+      image.style.backgroundImage = threeImage;
+      break;
+    default:
+      image.style.backgroundImage = threeImage;
+      count = 3;
+      break;
+  }
+}
+
+function proxSlide() {
+  clearInterval(interval);
+  interval = setInterval(proxSlide, timeInterval);
+  count++;
+  switch (count) {
+    case 1:
+      image.style.backgroundImage = oneImage;
+      break;
+    case 2:
+      image.style.backgroundImage = twoImage;
+      break;
+    case 3:
+      image.style.backgroundImage = threeImage;
+      break;
+    default:
+      image.style.backgroundImage = oneImage;
+      count = 1;
+      break;
+  }
+}

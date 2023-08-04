@@ -1,0 +1,41 @@
+#btnAnt {
+  /* position: absolute;
+  left: 10%; */
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+#btnProx {
+  padding: 0 10px;
+  /* position: absolute;
+  left: 90%; */
+  transition: 0.3s;
+}
+
+#btnAnt:hover,
+#btnProx:hover {
+  transform: scale(1.1);
+}
+
+#carrossel {
+  background: #000;
+  /* padding-top: 14.5vh; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imageCarrossel {
+  filter: grayscale(100%) background-image;
+  border: 7px solid #81ba95;
+  border-radius: 40px;
+  width: 80%;
+  height: 60%;
+  background-image: url("images/crs0.jpeg");
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s ease;
+}
