@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobility</title>
-    <link rel="styleSheet" href="styles.css">
-    
+    <link rel="styleSheet" href="./styles/(0)geral.css">
 </head>
 <body>
+    <!-- Barra de progressão da página -->
     <div id="indicator"></div>
 
     <header>
         
+        <!-- Barra de navegação pc -->
         <nav class="nav-bar">
             <div class="logo">
                 <img src="images/logo.png">
@@ -35,6 +36,7 @@
             </div>
         </nav>
 
+        <!-- Barra de navageção mobile -->
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#modelos" class="nav-link">Modelos</a></li>
@@ -49,27 +51,40 @@
 
     </header>
     
+    <!-- carrossel -->
     <section id="car">
 
-        <div id="carrossel">
-            <img src="images/seta1.png" id="btnAnt" onclick="slideAnt()" />
+        <!-- div carrossel -->
+        <div id="carrossel"> 
             <div class="imageCarrossel">
-              <img />
+              <h3 id="carrText"></h3>
             </div>
-            <img src="images/seta.png" id="btnProx" onclick="proxSlide()" />
+
+            <!-- botões carrossel -->
+            <div class="container-btns">
+                <img src="images/seta1.png" id="btnAnt" onclick="slideAnt()" />
+                <img src="images/seta.png" id="btnProx" onclick="proxSlide()" />
+            </div>
+            
           </div>
 
     </section>
 
+    <!-- planos -->
     <section id="planos">
 
+        <!-- titulo  -->
         <h1 id="titulo">Planos</h1>
 
+        <!-- imagem seta baixo -->
         <div class="seta-baixo">
             <img src="images/seta-baixo.png" />
         </div>
 
+        <!-- planos -->
         <div class="container-planos">
+
+            <!-- plano individual -->
             <div class="plano">
                 <div class="preco">
                     <h3>PLANO STANDARD</h3>
@@ -85,6 +100,7 @@
                 <a  href="#locar"><button id="btn" onClick="formsLocar('pStandard')">OBTER OPLANO</button></a>
             </div>
 
+            <!-- plano individual -->
             <div class="plano">
                 <div class="preco">
                     <h3>PLANO VIP</h3>
@@ -100,6 +116,7 @@
                 <a  href="#locar"><button id="btn" onClick="formsLocar('pVIP')">OBTER OPLANO</button></a>
             </div>
 
+            <!-- plano individual -->
             <div class="plano" id="plano3">
                 <div class="preco">
                     <h3>PLANO SUPER</h3>
@@ -118,6 +135,7 @@
 
     </section>
 
+    <!-- formulário de locação -->
     <div class="locar" id="locar">
         <img src="images/close_white_36dp.svg" id="X">
         <form method="post" action="mailto: t3xdev@gmail.com">
@@ -148,12 +166,11 @@
                 <h1>Total: </h1>
                 <h2 id="valorTotal">R$0,00</h2>
             </div>
-   
             <button id="btnAssinar">Assinar</button>
-
         </form>
     </div>
 
+    <!-- modelos bike/patinete -->
     <section id="modelos">
 
         <h1>Modelos</h1>
@@ -162,12 +179,14 @@
             <img src="images/seta-baixo.png" />
         </div>
 
+        <!-- modelo bike -->
         <div class="bike-patinete">
             <div id="bike">
                 <img src="images/bike1.webp" />
                 <p></p>
             </div>
 
+            <!-- modelo patinete -->
             <div id="patinete">
                 <img src="images/patinete.webp" />
                 <p></p>
@@ -175,6 +194,7 @@
         </div>
     </section>
 
+    <!-- sobre -->
     <section id="sobre">
         <p>
             Bem-vindo ao nosso serviço de aluguel de bicicletas e patinetes! Aqui, oferecemos uma experiência conveniente e ecologicamente consciente para a sua locomoção. Ao alugar um veículo, você desfrutará da liberdade de explorar a cidade de forma prática, divertida e sustentável.
@@ -184,17 +204,24 @@
         </p>
     </section>
 
+    <!-- playlist -->
     <section id="playlist">
-        <iframe src="https://open.spotify.com/embed/playlist/0xX33ADoZ3rBcEZ6hvO1hR?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+        <!-- playlist mobility feelings -->
+        <iframe src="https://open.spotify.com/embed/playlist/0xX33ADoZ3rBcEZ6hvO1hR?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </section>
 
+    <!-- barra de baixo -->
     <footer>
+
+        <!-- redes sociais -->
         <ul>
             <li><a href="https://www.instagram.com/m0bility_0fficial/" target="_blank"><img src="images/instagram-48.png"></a></li>
             <li><a href="https://goo.gl/maps/6NtE6jPA4TELgmQs5" target="_blank"><img src="images/mapa.png"></a></li>
             <li><a href="https://api.whatsapp.com/send?phone=5511971492891&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Mobility%20:)" target="_blank"><img src="images/whatsapp50.png"></a></li>
         </ul>
+
+        <!-- logo -->
         <div id="logo-slogan">
             <a href="#"><img src="images/logo.png"></a>
             <p>Seu bem estar em movimento</p>
@@ -203,9 +230,6 @@
         <h2>copy@2023</h2>
 
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
     <script src="main.js" ></script>
 </body>
 </html>

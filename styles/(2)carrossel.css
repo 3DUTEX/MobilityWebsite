@@ -1,0 +1,59 @@
+/* Carrossel */
+
+#btnAnt {
+  /* position: absolute;
+  left: 10%; */
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+#btnProx {
+  padding-top: 30px;
+  /* position: absolute;
+  left: 90%; */
+  transition: 0.3s;
+}
+
+#btnAnt:hover,
+#btnProx:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#carrossel {
+  padding-top: 10vh;
+  background: #000;
+  /* padding-top: 14.5vh; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imageCarrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 4px solid #81ba95; */
+  box-shadow: 10px 10px 0 0 #81ba95;
+  border-radius: 40px;
+  width: 85%;
+  height: 70vh;
+  background-image: url("../images/teste1.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s ease;
+}
+
+.imageCarrossel h3 {
+  color: #fff;
+  display: block;
+}
+
+.container-btns {
+  padding: 0 100px;
+}

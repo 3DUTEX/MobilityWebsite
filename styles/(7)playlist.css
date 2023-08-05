@@ -1,0 +1,21 @@
+/* Playlist */
+
+#playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/playlist-background.webp");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+}
+
+#playlist iframe {
+  width: 90%;
+  height: 500px;
+  border-radius: 12px;
+}

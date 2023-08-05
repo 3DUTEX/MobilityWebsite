@@ -1,0 +1,65 @@
+/* Planos */
+
+.plano {
+  margin: 5%;
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgb(233, 233, 233),
+    rgb(240, 240, 240),
+    rgb(233, 233, 233)
+  );
+  border-radius: 20px;
+  /* #d8d8d8 */
+}
+
+.plano:hover {
+  border: 2px solid #000;
+}
+
+.plano h3,
+h1,
+li,
+p {
+  color: #000;
+}
+
+.plano h1 {
+  padding: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.preco h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.preco {
+  border-bottom: 1px solid #000;
+}
+
+.preco p {
+  padding-bottom: 20px;
+}
+
+#lista {
+  padding-top: 30px;
+}
+
+#lista p {
+  padding: 5px;
+}
+
+.plano button {
+  margin-top: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}

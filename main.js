@@ -104,6 +104,8 @@ const oneImage = "url('images/teste1.jpg')";
 const twoImage = "url('images/teste2.png')";
 const threeImage = "url('images/teste3.jpg')";
 
+let onImage = oneImage;
+
 function slideAnt() {
   clearInterval(interval);
   interval = setInterval(proxSlide, timeInterval);
@@ -111,15 +113,19 @@ function slideAnt() {
   switch (count) {
     case 1:
       image.style.backgroundImage = oneImage;
+      onImage = oneImage;
       break;
     case 2:
       image.style.backgroundImage = twoImage;
+      onImage = twoImage;
       break;
     case 3:
       image.style.backgroundImage = threeImage;
+      onImage = threeImage;
       break;
     default:
       image.style.backgroundImage = threeImage;
+      onImage = threeImage;
       count = 3;
       break;
   }
@@ -132,16 +138,47 @@ function proxSlide() {
   switch (count) {
     case 1:
       image.style.backgroundImage = oneImage;
+      onImage = oneImage;
       break;
     case 2:
       image.style.backgroundImage = twoImage;
+      onImage = twoImage;
       break;
     case 3:
       image.style.backgroundImage = threeImage;
+      onImage = threeImage;
       break;
     default:
       image.style.backgroundImage = oneImage;
+      onImage = oneImage;
       count = 1;
       break;
   }
 }
+
+const carrText = document.querySelector("#carrText");
+image.addEventListener("mouseover", () => {
+  switch (onImage) {
+    case oneImage:
+      carrText.textContent = "foi";
+      break;
+    case twoImage:
+      carrText.textContent = "brabo demais";
+      break;
+    case threeImage:
+      carrText.textContent = "king of javascript";
+      break;
+    default:
+      carrText.textContent = "default";
+      break;
+  }
+
+  clearInterval(interval);
+
+  image.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), ${onImage}`;
+});
+
+image.addEventListener("mouseout", () => {
+  carrText.textContent = "";
+  proxSlide();
+});

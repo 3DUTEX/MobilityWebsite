@@ -1,0 +1,23 @@
+/* Modelos */
+
+#modelos {
+  text-align: center;
+}
+
+#modelos h1 {
+  margin: 30px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#bike img {
+  width: 90%;
+}
+
+#patinete img {
+  width: 100%;
+}
+
+#bike-patinete {
+  text-align: center;
+}

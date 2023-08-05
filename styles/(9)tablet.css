@@ -1,0 +1,128 @@
+/* Media querie tablet */
+
+@media (min-width: 801px) {
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-item {
+    display: flex;
+    transition: 0.3s ease-in;
+  }
+
+  .nav-item:hover {
+    border-bottom: 1px solid #81ba95;
+  }
+
+  .login-button {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: none;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button {
+    display: none;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  .plano {
+    margin: 10px;
+    width: 47%;
+  }
+
+  #bike,
+  #patinete {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .container-planos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #plano3 {
+    width: 500px;
+  }
+
+  #playlist iframe {
+    width: 70%;
+  }
+
+  footer {
+    padding-top: 10vh;
+    height: 70vh;
+    transition: 0.3s;
+  }
+
+  footer ul li {
+    transition: 0.3s;
+  }
+
+  #logo-slogan p {
+    font-size: 1.5rem;
+  }
+
+  #logo-slogan {
+    width: 100%;
+    text-align: center;
+  }
+
+  #logo-slogan img {
+    width: 50vh;
+  }
+}
