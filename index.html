@@ -1,235 +1,290 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobility</title>
-    <link rel="styleSheet" href="./styles/(0)geral.css">
-</head>
-<body>
+    <link rel="styleSheet" href="./styles/(0)geral.css" />
+  </head>
+  <body>
     <!-- Barra de progressão da página -->
     <div id="indicator"></div>
 
     <header>
-        
-        <!-- Barra de navegação pc -->
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#playlist" class="nav-link">Playlist</a></li>
-                    <li class="nav-item"><a href="#modelos" class="nav-link">Modelos</a></li>
-                </ul>
-            </div>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onClick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-
-        <!-- Barra de navageção mobile -->
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#modelos" class="nav-link">Modelos</a></li>
-                <li class="nav-item"><a href="#playlist" class="nav-link">Playlist</a></li>
-                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-            </ul>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
+      <!-- Barra de navegação pc -->
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" />
         </div>
 
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="#playlist" class="nav-link">Playlist</a>
+            </li>
+            <li class="nav-item">
+              <a href="#modelos" class="nav-link">Modelos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="login-button">
+          <a href="#"><button>Entrar</button></a>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onClick="menuShow()">
+            <img class="icon" src="images/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <!-- Barra de navageção mobile -->
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="#modelos" class="nav-link">Modelos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#playlist" class="nav-link">Playlist</a>
+          </li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+        </ul>
+
+        <div class="login-button">
+          <a href="#"><button>Entrar</button></a>
+        </div>
+      </div>
     </header>
-    
+
     <!-- carrossel -->
     <section id="car">
+      <!-- div carrossel -->
+      <div class="imageCarrossel">
+        <h3 id="carrText"></h3>
+      </div>
 
-        <!-- div carrossel -->
-        <div id="carrossel"> 
-            <div class="imageCarrossel">
-              <h3 id="carrText"></h3>
-            </div>
-
-            <!-- botões carrossel -->
-            <div class="container-btns">
-                <img src="images/seta1.png" id="btnAnt" onclick="slideAnt()" />
-                <img src="images/seta.png" id="btnProx" onclick="proxSlide()" />
-            </div>
-            
-          </div>
-
+      <!-- botões carrossel -->
+      <div class="container-btns">
+        <img
+          src="images/seta1.png"
+          id="btnAnt"
+          onclick="slideAnt()"
+          alt="seta-esquerda"
+        />
+        <img
+          src="images/seta.png"
+          id="btnProx"
+          onclick="proxSlide()"
+          alt="seta-direita"
+        />
+      </div>
     </section>
 
     <!-- planos -->
     <section id="planos">
+      <!-- titulo  -->
+      <h1 id="titulo">Planos</h1>
 
-        <!-- titulo  -->
-        <h1 id="titulo">Planos</h1>
+      <!-- imagem seta baixo -->
+      <div class="seta-baixo">
+        <img src="images/seta-baixo.png" alt="seta-baixo" />
+      </div>
 
-        <!-- imagem seta baixo -->
-        <div class="seta-baixo">
-            <img src="images/seta-baixo.png" />
+      <!-- planos -->
+      <div class="container-planos">
+        <!-- plano individual -->
+        <div class="plano">
+          <div class="preco">
+            <h3>PLANO STANDARD</h3>
+            <h1>R$100,00</h1>
+            <p>por mês</p>
+          </div>
+          <div class="lista">
+            <p>1 Bicleta</p>
+            <p>1 Patinete</p>
+            <p>Equipamentos de segurança</p>
+          </div>
+
+          <a href="#locar"
+            ><button id="btnStandard" onClick="formsLocar('pStandard')">
+              OBTER OPLANO
+            </button></a
+          >
         </div>
 
-        <!-- planos -->
-        <div class="container-planos">
+        <!-- plano individual -->
+        <div class="plano">
+          <div class="preco">
+            <h3>PLANO VIP</h3>
+            <h1>R$180,00</h1>
+            <p>por mês</p>
+          </div>
+          <div class="lista">
+            <p>Beneficíos anteriores</p>
+            <p>Bicicleta/patinete profissionais</p>
+            <p>1 ano de spotify de graça</p>
+          </div>
 
-            <!-- plano individual -->
-            <div class="plano">
-                <div class="preco">
-                    <h3>PLANO STANDARD</h3>
-                    <h1>R$100,00</h1>
-                    <p>por mês</p>
-                </div>
-                <div id="lista">
-                    <p>1 Bicleta</p>
-                    <p>1 Patinete</p>
-                    <p>Equipamentos de segurança</p>
-                </div>
-
-                <a  href="#locar"><button id="btn" onClick="formsLocar('pStandard')">OBTER OPLANO</button></a>
-            </div>
-
-            <!-- plano individual -->
-            <div class="plano">
-                <div class="preco">
-                    <h3>PLANO VIP</h3>
-                    <h1>R$180,00</h1>
-                    <p>por mês</p>
-                </div>
-                <div id="lista">
-                    <p>Beneficíos anteriores</p>
-                    <p>Bicicleta/patinete profissionais</p>
-                    <p>1 ano de spotify de graça</p>
-                </div>
-
-                <a  href="#locar"><button id="btn" onClick="formsLocar('pVIP')">OBTER OPLANO</button></a>
-            </div>
-
-            <!-- plano individual -->
-            <div class="plano" id="plano3">
-                <div class="preco">
-                    <h3>PLANO SUPER</h3>
-                    <h1>R$210,00</h1>
-                    <p>por mês</p>
-                </div>
-                <div id="lista">
-                    <p>Beneficíos anteriores</p>
-                    <p>Personalizar bike/patinete</p>
-                    <p>Seguro contra roubo/quebra</p>
-                </div>
-
-                <a  href="#locar"><button id="btn" onClick="formsLocar('pSuper')">OBTER OPLANO</button></a>
-            </div>
+          <a href="#locar"
+            ><button id="btnVip" onClick="formsLocar('pVIP')">
+              OBTER OPLANO
+            </button></a
+          >
         </div>
 
+        <!-- plano individual -->
+        <div class="plano" id="plano3">
+          <div class="preco">
+            <h3>PLANO SUPER</h3>
+            <h1>R$210,00</h1>
+            <p>por mês</p>
+          </div>
+          <div class="lista">
+            <p>Beneficíos anteriores</p>
+            <p>Personalizar bike/patinete</p>
+            <p>Seguro contra roubo/quebra</p>
+          </div>
+
+          <a href="#locar"
+            ><button id="btnSuper" onClick="formsLocar('pSuper')">
+              OBTER OPLANO
+            </button></a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- formulário de locação -->
     <div class="locar" id="locar">
-        <img src="images/close_white_36dp.svg" id="X">
-        <form method="post" action="mailto: t3xdev@gmail.com">
-            <h1>Preencha os dados: </h1>
+      <img src="images/close_white_36dp.svg" id="X" alt="x-fechar" />
+      <form method="post" action="mailto: t3xdev@gmail.com">
+        <h1>Preencha os dados:</h1>
 
-            <label for="#nome">Nome: </label>
-                <input type="text" id="nome"></input>
-            <label for="#sobrenome">Sobrenome: </label>
-                <input type="text" id="sobrenome"></input>
-            <label for="#email">Email: </label>
-                <input type="email" id="email"></input>
-            <label for="#telefone">Telefone: </label>
-                <input type="text" id="telefone"></input>
-            <!-- <label for="m">M</label>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" />
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" id="sobrenome" />
+        <label for="email">Email: </label>
+        <input type="email" id="email" />
+        <label for="telefone">Telefone: </label>
+        <input type="text" id="telefone" />
+        <!-- <label for="m">M</label>
                 <input type="radio" id="m" name="sexo" value="M">
             <label for="f">F</label>
                 <input type="radio" id="f" name="sexo" value="f"> -->
-            <label for="#CPF">CPF: </label>
-                <input type="text" id="CPF"></input>
-            <label for="#planoEscolhido">Plano: </label>
-                <select name="planoEscolhido" id="planoEscolhido" onchange="valueSelected()">
-                    <option value=""></option>
-                    <option value="pStandard">Plano Standard</option>
-                    <option value="pVIP">Plano VIP</option>
-                    <option value="pSuper">Plano Super</option>
-                </select>
-            <div id="total">
-                <h1>Total: </h1>
-                <h2 id="valorTotal">R$0,00</h2>
-            </div>
-            <button id="btnAssinar">Assinar</button>
-        </form>
+        <label for="CPF">CPF: </label>
+        <input type="text" id="CPF" />
+        <label for="planoEscolhido">Plano: </label>
+        <select
+          name="planoEscolhido"
+          id="planoEscolhido"
+          onchange="valueSelected()"
+        >
+          <option value=""></option>
+          <option value="pStandard">Plano Standard</option>
+          <option value="pVIP">Plano VIP</option>
+          <option value="pSuper">Plano Super</option>
+        </select>
+        <div id="total">
+          <h1>Total:</h1>
+          <h2 id="valorTotal">R$0,00</h2>
+        </div>
+        <button id="btnAssinar">Assinar</button>
+      </form>
     </div>
 
     <!-- modelos bike/patinete -->
     <section id="modelos">
+      <h1>Modelos</h1>
 
-        <h1>Modelos</h1>
+      <div class="seta-baixo">
+        <img src="images/seta-baixo.png" alt="seta-baixo" />
+      </div>
 
-        <div class="seta-baixo">
-            <img src="images/seta-baixo.png" />
+      <!-- modelo bike -->
+      <div class="bike-patinete">
+        <div id="bike">
+          <img src="images/bike1.webp" alt="bike" />
+          <p></p>
         </div>
 
-        <!-- modelo bike -->
-        <div class="bike-patinete">
-            <div id="bike">
-                <img src="images/bike1.webp" />
-                <p></p>
-            </div>
-
-            <!-- modelo patinete -->
-            <div id="patinete">
-                <img src="images/patinete.webp" />
-                <p></p>
-            </div>
+        <!-- modelo patinete -->
+        <div id="patinete">
+          <img src="images/patinete.webp" alt="patinete" />
+          <p></p>
         </div>
+      </div>
     </section>
 
     <!-- sobre -->
     <section id="sobre">
-        <p>
-            Bem-vindo ao nosso serviço de aluguel de bicicletas e patinetes! Aqui, oferecemos uma experiência conveniente e ecologicamente consciente para a sua locomoção. Ao alugar um veículo, você desfrutará da liberdade de explorar a cidade de forma prática, divertida e sustentável.
-            Nosso processo é simples e eficiente. Ao chegar em uma de nossas estações de aluguel, você encontrará uma ampla variedade de bicicletas e patinetes disponíveis. Cada veículo está equipado com uma tecnologia inovadora de pagamento, que agiliza o processo e proporciona comodidade aos nossos clientes.
-            Após escolher o veículo desejado, você poderá efetuar o pagamento diretamente em nosso aplicativo móvel ou através do nosso site. Uma vez confirmado o pagamento, você receberá um código QR exclusivo.
-            Esse código QR é a chave para desbloquear seu veículo. Basta aproximar o leitor do código do dispositivo de desbloqueio presente em cada bicicleta ou patinete, e em instantes você estará pronto para iniciar sua jornada. É rápido, simples e seguro!
-        </p>
+      <p>
+        Bem-vindo ao nosso serviço de aluguel de bicicletas e patinetes! Aqui,
+        oferecemos uma experiência conveniente e ecologicamente consciente para
+        a sua locomoção. Ao alugar um veículo, você desfrutará da liberdade de
+        explorar a cidade de forma prática, divertida e sustentável. Nosso
+        processo é simples e eficiente. Ao chegar em uma de nossas estações de
+        aluguel, você encontrará uma ampla variedade de bicicletas e patinetes
+        disponíveis. Cada veículo está equipado com uma tecnologia inovadora de
+        pagamento, que agiliza o processo e proporciona comodidade aos nossos
+        clientes. Após escolher o veículo desejado, você poderá efetuar o
+        pagamento diretamente em nosso aplicativo móvel ou através do nosso
+        site. Uma vez confirmado o pagamento, você receberá um código QR
+        exclusivo. Esse código QR é a chave para desbloquear seu veículo. Basta
+        aproximar o leitor do código do dispositivo de desbloqueio presente em
+        cada bicicleta ou patinete, e em instantes você estará pronto para
+        iniciar sua jornada. É rápido, simples e seguro!
+      </p>
     </section>
 
     <!-- playlist -->
     <section id="playlist">
-
-        <!-- playlist mobility feelings -->
-        <iframe src="https://open.spotify.com/embed/playlist/0xX33ADoZ3rBcEZ6hvO1hR?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <!-- playlist mobility feelings -->
+      <iframe
+        src="https://open.spotify.com/embed/playlist/0xX33ADoZ3rBcEZ6hvO1hR?utm_source=generator&theme=0"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
     </section>
 
     <!-- barra de baixo -->
     <footer>
+      <!-- redes sociais -->
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/m0bility_0fficial/" target="_blank"
+            ><img src="images/instagram-48.png" alt="logo-instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://goo.gl/maps/6NtE6jPA4TELgmQs5" target="_blank"
+            ><img src="images/mapa.png" alt="mapa"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=5511971492891&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Mobility%20:"
+            target="_blank"
+            ><img src="images/whatsapp50.png" alt="logo-whatssap"
+          /></a>
+        </li>
+      </ul>
 
-        <!-- redes sociais -->
-        <ul>
-            <li><a href="https://www.instagram.com/m0bility_0fficial/" target="_blank"><img src="images/instagram-48.png"></a></li>
-            <li><a href="https://goo.gl/maps/6NtE6jPA4TELgmQs5" target="_blank"><img src="images/mapa.png"></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=5511971492891&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Mobility%20:)" target="_blank"><img src="images/whatsapp50.png"></a></li>
-        </ul>
+      <!-- logo -->
+      <div id="logo-slogan">
+        <a href="#"><img src="images/logo.png" alt="logo-mobility" /></a>
+        <p>Seu bem estar em movimento</p>
+      </div>
 
-        <!-- logo -->
-        <div id="logo-slogan">
-            <a href="#"><img src="images/logo.png"></a>
-            <p>Seu bem estar em movimento</p>
-        </div>
-
-        <h2>copy@2023</h2>
-
+      <h2>copy@2023</h2>
     </footer>
-    <script src="main.js" ></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

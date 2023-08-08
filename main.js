@@ -25,6 +25,7 @@ let valorTotal = document.querySelector("#valorTotal");
 xCancelar.addEventListener("click", function () {
   //quando clicado, altera locar para display none
   locar.style.display = "none";
+
   cont = 0; //quando clicado cont recebe 0
 });
 
@@ -160,7 +161,7 @@ const carrText = document.querySelector("#carrText");
 image.addEventListener("mouseover", () => {
   switch (onImage) {
     case oneImage:
-      carrText.textContent = "foi";
+      carrText.textContent = "Pedalar é s";
       break;
     case twoImage:
       carrText.textContent = "brabo demais";
