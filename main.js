@@ -101,9 +101,9 @@ const timeInterval = 3000;
 let interval = setInterval(proxSlide, timeInterval);
 let count = 1;
 
-const oneImage = "url('images/teste1.jpg')";
-const twoImage = "url('images/teste2.png')";
-const threeImage = "url('images/teste3.jpg')";
+const oneImage = "url('images/wp1.jpg')";
+const twoImage = "url('images/wp2.jpg')";
+const threeImage = "url('images/wp3.jpg')";
 
 let onImage = oneImage;
 
@@ -161,16 +161,16 @@ const carrText = document.querySelector("#carrText");
 image.addEventListener("mouseover", () => {
   switch (onImage) {
     case oneImage:
-      carrText.textContent = "Pedalar é s";
+      carrText.textContent = "Pedalar é energizante";
       break;
     case twoImage:
-      carrText.textContent = "brabo demais";
+      carrText.textContent = "Divertido e saudável";
       break;
     case threeImage:
-      carrText.textContent = "king of javascript";
+      carrText.textContent = "Com uma música fica ainda mais legal!";
       break;
     default:
-      carrText.textContent = "default";
+      carrText.textContent = "Um bom momento para pensar sobre a vida";
       break;
   }
 
