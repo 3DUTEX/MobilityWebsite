@@ -24,10 +24,13 @@
 }
 
 .login-button button {
+  font-size: 15px;
+  font-weight: bold;
   border: none;
   background: #81ba95;
   padding: 10px 15px;
   border-radius: 5px;
+  cursor: pointer;
   transition: 0.3s;
 }
 

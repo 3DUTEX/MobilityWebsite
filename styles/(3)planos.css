@@ -45,11 +45,11 @@ p {
   padding-bottom: 20px;
 }
 
-#lista {
+.lista {
   padding-top: 30px;
 }
 
-#lista p {
+.lista p {
   padding: 5px;
 }
 
