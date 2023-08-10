@@ -2,9 +2,20 @@
 
 #sobre {
   padding: 20px;
+  text-align: center;
   background-color: #81ba95;
 }
 
 #sobre p {
-  color: #fff;
+  color: #000;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+#sobre:hover{
+  background-color: orange;
+  color: black;
+  font-size: 30px;
+  animation:  0.1s;
+
 }
