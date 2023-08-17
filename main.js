@@ -183,3 +183,17 @@ image.addEventListener("mouseout", () => {
   carrText.textContent = "";
   proxSlide();
 });
+
+//popUp
+const sobrePopUp = document.getElementById("sobre-popUp");
+const sobreLink = document.getElementById("sobre-link");
+
+sobreLink.addEventListener("click", () => {
+  // if (sobrePopUp.className.includes == "popOff") {
+  //   sobrePopUp.className = "sobre-popUp popOn";
+  // } else {
+  //   sobrePopUp.className = "sobre-popUp popOff";
+  // }
+
+  sobrePopUp.className = "sobre-popUp popOn";
+});
