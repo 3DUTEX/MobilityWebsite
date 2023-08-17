@@ -2,7 +2,8 @@
 
 footer {
   width: 100%;
-  height: 70vh;
+  height: auto;
+  padding: 50px;
   background-color: #000;
   text-align: center;
   align-items: center;
@@ -22,7 +23,7 @@ footer ul {
 
 footer ul li {
   list-style: none;
-  padding: 30px;
+  padding: 0 20px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -31,8 +32,15 @@ footer ul li:hover {
   transform: scale(1.2);
 }
 
+footer p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 #logo-slogan img {
-  width: 40vh;
+  padding-top: 50px;
+  width: 30vh;
   cursor: pointer;
   transition: 0.3s;
 }
