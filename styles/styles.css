@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
 @import "./carrossel.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+@import "./(0)geral.css";
 @import "./(1)navbar.css";
 @import "./(2)carrossel.css";
 @import "./(3)planos.css";
@@ -11,5 +12,4 @@
 @import "./(8)footerbar.css";
 @import "./(9)tablet.css";
 @import "./(10)desktop.css";
-@import "./(0)geral.css";
-
+@import "./(11)popUp.css";
