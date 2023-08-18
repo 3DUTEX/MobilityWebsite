@@ -11,13 +11,25 @@
 }
 
 #bike img {
-  width: 90%;
+  margin: 50px 0;
+  width: 80%;
+  transition: 0.3s ease-in-out;
 }
 
 #patinete img {
-  width: 100%;
+  margin: 50px 0;
+  width: 85%;
+  transition: 0.3s ease-in-out;
 }
 
 #bike-patinete {
   text-align: center;
+}
+
+#bike img:hover {
+  transform: scale(1.1);
+}
+
+#patinete img:hover {
+  transform: scale(1.1);
 }

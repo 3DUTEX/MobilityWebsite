@@ -1,7 +1,7 @@
-function menuShow() {
-  let menuMobile = document.querySelector(".mobile-menu");
-  const menuIcon = document.querySelector(".icon");
+let menuMobile = document.querySelector(".mobile-menu");
+const menuIcon = document.querySelector(".icon");
 
+function menuShow() {
   if (menuMobile.classList.contains("open")) {
     //se menuMobile estiver aberto, feche
     menuMobile.classList.remove("open");
@@ -187,13 +187,34 @@ image.addEventListener("mouseout", () => {
 //popUp
 const sobrePopUp = document.getElementById("sobre-popUp");
 const sobreLink = document.getElementById("sobre-link");
+const cancelar = document.getElementById("cancelar");
 
 sobreLink.addEventListener("click", () => {
-  // if (sobrePopUp.className.includes == "popOff") {
-  //   sobrePopUp.className = "sobre-popUp popOn";
-  // } else {
-  //   sobrePopUp.className = "sobre-popUp popOff";
-  // }
+  sobrePopUp.style.display = "flex";
 
-  sobrePopUp.className = "sobre-popUp popOn";
+  setTimeout(() => {
+    sobrePopUp.className = "sobre-popUp popOn";
+  }, 100);
+});
+
+cancelar.addEventListener("click", () => {
+  sobrePopUp.className = "sobre-popUp popOff";
+
+  setTimeout(() => {
+    sobrePopUp.style.display = "none";
+  }, 300);
+});
+
+const sobreLinkMobile = document.getElementById("sobre-link-mobile");
+
+sobreLinkMobile.addEventListener("click", () => {
+  sobrePopUp.style.display = "flex";
+
+  menuMobile.classList.remove("open");
+
+  menuIcon.src = "images/menu_white_36dp.svg";
+
+  setTimeout(() => {
+    sobrePopUp.className = "sobre-popUp popOn";
+  }, 100);
 });
