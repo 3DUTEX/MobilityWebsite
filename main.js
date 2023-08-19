@@ -181,7 +181,9 @@ image.addEventListener("mouseover", () => {
 
 image.addEventListener("mouseout", () => {
   carrText.textContent = "";
-  proxSlide();
+  image.style.backgroundImage = `${onImage}`;
+
+  interval = setInterval(proxSlide, timeInterval);
 });
 
 //popUp
