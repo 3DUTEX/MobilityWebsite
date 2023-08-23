@@ -174,4 +174,22 @@
   .redes-sociais p {
     padding-bottom: 20px;
   }
+
+  .sobre-popUp img {
+    margin-bottom: 20px;
+  }
+
+  .sobre-popUp div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 1.3rem;
+    margin-top: 80px;
+    width: 80%;
+    height: 80vh;
+    background: #81ba95;
+    border-radius: 20px;
+  }
 }
